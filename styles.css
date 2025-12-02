@@ -293,82 +293,6 @@ ul {
   );
 }
 
-.candlesticks-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 192px;
-  opacity: 0.2;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  padding: 0 20px;
-}
-
-.candlestick {
-  width: 40px;
-  animation: candleGrow 2s ease-in-out infinite;
-}
-
-.candlestick.green {
-  background: linear-gradient(180deg, rgba(16, 185, 129, 0.9), rgba(16, 185, 129, 0.6));
-  height: 60%;
-}
-
-.candlestick.red {
-  background: linear-gradient(180deg, rgba(239, 68, 68, 0.9), rgba(239, 68, 68, 0.6));
-  height: 40%;
-}
-
-.candlestick:nth-child(1) { height: 50%; animation-delay: 0s; }
-.candlestick:nth-child(2) { height: 35%; animation-delay: 0.2s; }
-.candlestick:nth-child(3) { height: 65%; animation-delay: 0.4s; }
-.candlestick:nth-child(4) { height: 30%; animation-delay: 0.6s; }
-.candlestick:nth-child(5) { height: 70%; animation-delay: 0.8s; }
-.candlestick:nth-child(6) { height: 55%; animation-delay: 1s; }
-.candlestick:nth-child(7) { height: 40%; animation-delay: 1.2s; }
-.candlestick:nth-child(8) { height: 60%; animation-delay: 1.4s; }
-
-@keyframes candleGrow {
-  0%, 100% { transform: scaleY(1); }
-  50% { transform: scaleY(1.1); }
-}
-
-.floating-numbers {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.float-num {
-  position: absolute;
-  bottom: 0;
-  color: var(--emerald);
-  font-weight: 700;
-  font-size: 0.875rem;
-  animation: floatUp 4s ease-out infinite;
-  opacity: 0;
-}
-
-@keyframes floatUp {
-  0% {
-    bottom: 0;
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    bottom: 100%;
-    opacity: 0;
-  }
-}
-
 .hero-content {
   position: relative;
   z-index: 10;
@@ -498,6 +422,29 @@ ul {
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.3; }
+}
+
+/* ==================== INFOGRAPHIC SECTION ==================== */
+
+.infographic-section {
+  padding: 80px 20px;
+  background: white;
+}
+
+.infographic-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.infographic-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: var(--shadow-strong);
+  display: block;
+  margin: 0 auto;
 }
 
 /* ==================== SERVICES SECTION ==================== */
@@ -1286,13 +1233,5 @@ ul {
   
   .btn-large {
     width: 100%;
-  }
-  
-  .candlesticks-container {
-    height: 100px;
-  }
-  
-  .candlestick {
-    width: 24px;
   }
 }
