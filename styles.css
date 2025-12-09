@@ -47,6 +47,11 @@ ul {
 :root {
   --navy: hsl(222, 47%, 11%);
   --navy-light: hsl(222, 47%, 20%);
+  --navy-dark: hsl(222, 47%, 8%);
+  /* Darker navy for aurora background */
+  --aurora-purple: hsl(260, 50%, 30%);
+  --aurora-teal: hsl(180, 50%, 30%);
+  --aurora-blue: hsl(210, 50%, 30%);
   --emerald: hsl(171, 76%, 44%);
   --emerald-light: hsl(171, 76%, 54%);
   --gold: hsl(43, 96%, 56%);
@@ -334,6 +339,18 @@ ul {
   margin-bottom: 24px;
 }
 
+.txt-rotate {
+  display: inline-block;
+  color: var(--emerald);
+  transition: all 0.3s ease-in-out;
+  padding-right: 5px;
+}
+
+.txt-rotate.changing {
+  transform: scale(1.1);
+  color: var(--gold);
+}
+
 .hero-title {
   font-size: 4rem;
   font-weight: 700;
@@ -472,7 +489,83 @@ ul {
 
 .services {
   padding: 80px 20px;
-  background: var(--gray-light);
+  background: var(--navy-dark);
+  /* Dark background matching reference */
+  position: relative;
+  overflow: hidden;
+  color: var(--white);
+  /* White text for dark section */
+}
+
+/* Aurora Gradient Mesh Animation */
+.services-bg-animation {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 50%, #1e293b 0%, #0f172a 100%);
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  /* Heavy blur for fluid effect */
+  opacity: 0.5;
+  animation: floatOrb 15s infinite ease-in-out alternate;
+  mix-blend-mode: screen;
+  /* Blend colors nicely */
+}
+
+.orb-1 {
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, var(--aurora-purple) 0%, transparent 70%);
+  top: -20%;
+  left: -10%;
+  animation-duration: 25s;
+}
+
+.orb-2 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--aurora-teal) 0%, transparent 70%);
+  bottom: -10%;
+  right: -10%;
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+.orb-3 {
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, var(--aurora-blue) 0%, transparent 70%);
+  top: 40%;
+  left: 30%;
+  animation-delay: -10s;
+  animation-duration: 22s;
+}
+
+@keyframes floatOrb {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: translate(50px, 30px) scale(1.1);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translate(-30px, -20px) scale(0.9);
+    opacity: 0.5;
+  }
+}
+
+.relative-z {
+  position: relative;
+  z-index: 1;
 }
 
 .services-grid {
@@ -484,24 +577,27 @@ ul {
 }
 
 .service-card {
-  background: white;
+  background: rgba(255, 255, 255, 0.05);
+  /* Glassmorphic background */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: var(--shadow-medium);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: var(--transition-smooth);
-  border: 2px solid transparent;
 }
 
 .service-card:hover {
   transform: scale(1.05);
-  box-shadow: var(--shadow-strong);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   border-color: var(--emerald);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .service-image {
   height: 192px;
   overflow: hidden;
-  background: var(--gray-light);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .service-image img {
@@ -522,11 +618,13 @@ ul {
 .service-content h3 {
   font-size: 1.5rem;
   margin-bottom: 12px;
-  color: var(--navy);
+  color: var(--white);
+  /* Updated for dark theme */
 }
 
 .service-content>p {
-  color: var(--gray);
+  color: rgba(255, 255, 255, 0.8);
+  /* Updated for dark theme */
   margin-bottom: 20px;
 }
 
@@ -540,7 +638,8 @@ ul {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--navy);
+  color: rgba(255, 255, 255, 0.9);
+  /* Updated for dark theme */
 }
 
 .service-features li::before {
@@ -560,6 +659,7 @@ ul {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 48px;
+  color: var(--white);
 }
 
 .benefits-grid {
@@ -571,15 +671,18 @@ ul {
 .benefit-card {
   text-align: center;
   padding: 32px 24px;
-  background: white;
+  background: rgba(255, 255, 255, 0.05);
+  /* Glassmorphic */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  box-shadow: var(--shadow-soft);
   transition: var(--transition-smooth);
 }
 
 .benefit-card:hover {
   transform: scale(1.05);
-  box-shadow: var(--shadow-medium);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--emerald);
 }
 
 .benefit-icon {
@@ -592,18 +695,19 @@ ul {
   font-size: 2rem;
   background: rgba(16, 185, 129, 0.1);
   border-radius: 50%;
+  color: var(--emerald);
 }
 
 .benefit-card h4 {
   font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: 8px;
-  color: var(--navy);
+  color: var(--white);
 }
 
 .benefit-card p {
   font-size: 0.875rem;
-  color: var(--gray);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* ==================== PERFORMANCE SECTION ==================== */

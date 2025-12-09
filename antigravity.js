@@ -23,7 +23,7 @@ class AntigravityAnimation {
         this.canvas.style.height = '100%';
         this.canvas.style.zIndex = '-10';
         this.canvas.style.pointerEvents = 'none'; // Click through to content
-        this.canvas.style.background = '#ffffff'; // White background base
+        this.canvas.style.background = 'linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)'; // Attractive "Cool Sky" blue gradient
 
         document.body.prepend(this.canvas);
 
@@ -51,7 +51,7 @@ class AntigravityAnimation {
     }
 
     createParticles() {
-        const spacing = 40; // Distance between dots
+        const spacing = 25; // Decreased spacing = More rows/cols
         const rows = Math.ceil(this.canvas.height / spacing);
         const cols = Math.ceil(this.canvas.width / spacing);
 
@@ -65,8 +65,8 @@ class AntigravityAnimation {
                     y: y,
                     originX: x,
                     originY: y,
-                    size: 2, // Small dots
-                    color: '#bdc1c6', // Light gray standard dot
+                    size: 1.5, // Smaller dots
+                    color: 'rgba(255, 255, 255, 0.6)', // Low contrast, subtle white dots
                     vx: 0,
                     vy: 0,
                     density: (Math.random() * 30) + 1

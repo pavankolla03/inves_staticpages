@@ -1,634 +1,708 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Investimes - Expert Mutual Fund & Fixed Deposit Advisory</title>
-    <meta name="description" content="AMFI Certified financial advisor Kolla Manoj offers expert guidance on mutual funds and fixed deposits. Invest today for good times with trusted financial planning." />
-    <meta name="author" content="Investimes" />
-    
-    <meta property="og:title" content="Investimes - Expert Mutual Fund & Fixed Deposit Advisory" />
-    <meta property="og:description" content="AMFI Certified financial advisor offering expert guidance on mutual funds and fixed deposits" />
-    <meta property="og:type" content="website" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-  </head>
 
-  <body>
-    <!-- Navigation -->
-    <nav id="navigation">
-      <div class="nav-container">
-        <button onclick="scrollToTop()" class="logo">INVESTIMES</button>
-        
-        <div class="nav-desktop">
-          <a href="#home" onclick="smoothScroll('home')">Home</a>
-          <a href="#services" onclick="smoothScroll('services')">Services</a>
-          <a href="#about" onclick="smoothScroll('about')">About</a>
-          <a href="#contact" onclick="smoothScroll('contact')">Contact</a>
-          <button class="btn btn-primary" onclick="smoothScroll('contact')">Get Started</button>
-        </div>
-        
-        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-          <span class="menu-icon">☰</span>
-        </button>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investimes - Expert Mutual Fund & Fixed Deposit Advisory</title>
+  <meta name="description"
+    content="AMFI Certified financial advisor Kolla Manoj offers expert guidance on mutual funds and fixed deposits. Invest today for good times with trusted financial planning." />
+  <meta name="author" content="Investimes" />
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="mobile-menu">
-      <div class="mobile-menu-content">
-        <a href="#home" onclick="smoothScroll('home'); toggleMobileMenu()">Home</a>
-        <a href="#services" onclick="smoothScroll('services'); toggleMobileMenu()">Services</a>
-        <a href="#about" onclick="smoothScroll('about'); toggleMobileMenu()">About</a>
-        <a href="#contact" onclick="smoothScroll('contact'); toggleMobileMenu()">Contact</a>
-        <button class="btn btn-primary" onclick="smoothScroll('contact'); toggleMobileMenu()">Get Started</button>
+  <meta property="og:title" content="Investimes - Expert Mutual Fund & Fixed Deposit Advisory" />
+  <meta property="og:description"
+    content="AMFI Certified financial advisor offering expert guidance on mutual funds and fixed deposits" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav id="navigation">
+    <div class="nav-container">
+      <button onclick="scrollToTop()" class="logo">INVESTIMES</button>
+
+      <div class="nav-desktop">
+        <a href="#home" onclick="smoothScroll('home')">Home</a>
+        <a href="#services" onclick="smoothScroll('services')">Services</a>
+        <a href="#about" onclick="smoothScroll('about')">About</a>
+        <a href="#contact" onclick="smoothScroll('contact')">Contact</a>
+        <button class="btn btn-primary" onclick="smoothScroll('contact')">Get Started</button>
       </div>
+
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <span class="menu-icon">☰</span>
+      </button>
     </div>
+  </nav>
 
-    <main>
-      <!-- Hero Section -->
-      <section id="home" class="hero">
-        <div class="hero-background">
-          <img src="assets/hero-background.jpg" alt="Financial growth and investment" />
-          <div class="hero-overlay"></div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="#home" onclick="smoothScroll('home'); toggleMobileMenu()">Home</a>
+      <a href="#services" onclick="smoothScroll('services'); toggleMobileMenu()">Services</a>
+      <a href="#about" onclick="smoothScroll('about'); toggleMobileMenu()">About</a>
+      <a href="#contact" onclick="smoothScroll('contact'); toggleMobileMenu()">Contact</a>
+      <button class="btn btn-primary" onclick="smoothScroll('contact'); toggleMobileMenu()">Get Started</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <img src="assets/hero-background.jpg" alt="Financial growth and investment" />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="badge">
+          <span>📈</span>
+          <span>AMFI Certified Financial Advisor</span>
         </div>
 
-        <div class="hero-content">
-          <div class="badge">
-            <span>📈</span>
-            <span>AMFI Certified Financial Advisor</span>
+        <h1 class="hero-title">
+          Invest <span class="txt-rotate" data-period="1000"
+            data-rotate='[ "Today", "Tomorrow", "Future" ]'>Today</span> for
+          <span class="highlight">Good Times</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Expert guidance on mutual funds and fixed deposits from a trusted AMFI certified advisor
+        </p>
+
+        <div class="hero-buttons">
+          <button class="btn btn-large btn-secondary" onclick="smoothScroll('contact')">
+            Start Your Investment Journey →
+          </button>
+          <button class="btn btn-large btn-outline" onclick="smoothScroll('services')">
+            Explore Services
+          </button>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value">10+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">500+</div>
+            <div class="stat-label">Happy Investors</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">₹50Cr+</div>
+            <div class="stat-label">Portfolios Managed</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+    </section>
+
+    <!-- SIP Investment Infographic Section -->
+    <section class="infographic-section">
+      <div class="container">
+        <div class="infographic-container">
+          <img src="public/images/corpus-infographic.jpg" alt="SIP Investment Growth - ₹1.0 Crore Accumulated Savings"
+            class="infographic-image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="services-bg-animation">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+      </div>
+      <div class="container relative-z">
+        <div class="section-header">
+          <h2>Our <span class="highlight">Services</span></h2>
+          <p>Comprehensive financial solutions designed to help you achieve your investment goals</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Mutual Funds -->
+          <div class="service-card">
+            <div class="service-image">
+              <img src="assets/mutual-funds-icon.jpg" alt="Mutual Funds" />
+            </div>
+            <div class="service-content">
+              <h3>Mutual Funds</h3>
+              <p>Diversify your portfolio with expertly selected mutual funds tailored to your financial goals and risk
+                appetite.</p>
+              <ul class="service-features">
+                <li>Equity & Debt Funds</li>
+                <li>SIP Planning</li>
+                <li>Goal-based Investing</li>
+                <li>Regular Portfolio Reviews</li>
+              </ul>
+            </div>
           </div>
 
-          <h1 class="hero-title">
-            Invest Today for
-            <span class="highlight">Good Times</span>
-          </h1>
+          <!-- Fixed Deposits -->
+          <div class="service-card">
+            <div class="service-image">
+              <img src="assets/fixed-deposits-icon.jpg" alt="Fixed Deposits" />
+            </div>
+            <div class="service-content">
+              <h3>Fixed Deposits</h3>
+              <p>Secure your wealth with guaranteed returns through carefully selected fixed deposit schemes from
+                leading banks.</p>
+              <ul class="service-features">
+                <li>Competitive Interest Rates</li>
+                <li>Flexible Tenure Options</li>
+                <li>Safe & Guaranteed Returns</li>
+                <li>Tax-Saving FD Options</li>
+              </ul>
+            </div>
+          </div>
 
-          <p class="hero-subtitle">
-            Expert guidance on mutual funds and fixed deposits from a trusted AMFI certified advisor
+          <!-- Health Insurance -->
+          <div class="service-card">
+            <div class="service-image">
+              <img src="public/images/health-insurance-icon.jpg" alt="Health Insurance" />
+            </div>
+            <div class="service-content">
+              <h3>Health Insurance</h3>
+              <p>Comprehensive health insurance solutions to protect you and your family from medical emergencies and
+                rising healthcare costs.</p>
+              <ul class="service-features">
+                <li>Individual Health Insurance</li>
+                <li>Group Health Insurance</li>
+                <li>Family Floater Plans</li>
+                <li>Comprehensive Coverage Options</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Term Insurance -->
+          <div class="service-card">
+            <div class="service-image">
+              <img src="public/images/term-insurance-icon.jpg" alt="Term Insurance" />
+            </div>
+            <div class="service-content">
+              <h3>Term Insurance</h3>
+              <p>Affordable life insurance protection to secure your family's financial future with high coverage at low
+                premiums.</p>
+              <ul class="service-features">
+                <li>High Coverage at Low Premiums</li>
+                <li>Flexible Policy Terms</li>
+                <li>Rider Options Available</li>
+                <li>Tax Benefits Under Section 80C</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Financial Goal Planning -->
+          <div class="service-card">
+            <div class="service-image">
+              <img src="public/images/goal-planning-icon.jpg" alt="Financial Goal Planning" />
+            </div>
+            <div class="service-content">
+              <h3>Financial Goal Planning</h3>
+              <p>Structured financial planning to achieve your life goals with customized investment strategies and
+                regular monitoring.</p>
+              <ul class="service-features">
+                <li>Child Education Planning</li>
+                <li>Retirement Planning</li>
+                <li>Health & Medical Planning</li>
+                <li>Goal-based Investment Strategies</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Portfolio Management -->
+          <div class="service-card">
+            <div class="service-image">
+              <img src="public/images/portfolio-management-icon.jpg" alt="Portfolio Management" />
+            </div>
+            <div class="service-content">
+              <h3>Portfolio Management</h3>
+              <p>Professional portfolio rebalancing and review services to optimize your investments and maximize
+                returns.</p>
+              <ul class="service-features">
+                <li>Portfolio Rebalancing</li>
+                <li>Regular Portfolio Reviews</li>
+                <li>Performance Analysis</li>
+                <li>Risk-adjusted Optimization</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Claim Support & Policy Review -->
+          <div class="service-card">
+            <div class="service-image">
+              <img src="public/images/claim-support-icon.jpg" alt="Claim Support & Policy Review" />
+            </div>
+            <div class="service-content">
+              <h3>Claim Support & Policy Review</h3>
+              <p>Expert assistance with insurance claims and comprehensive policy reviews to ensure optimal coverage and
+                benefits.</p>
+              <ul class="service-features">
+                <li>Insurance Claim Support</li>
+                <li>Policy Review & Analysis</li>
+                <li>Documentation Assistance</li>
+                <li>Coverage Optimization</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Loans -->
+          <div class="service-card">
+            <div class="service-image">
+              <img src="public/images/loan-services-icon.jpg" alt="Loans" />
+            </div>
+            <div class="service-content">
+              <h3>Loans</h3>
+              <p>Access to competitive loan products with expert guidance to help you secure the best rates and terms.
+              </p>
+              <ul class="service-features">
+                <li>Personal Loans</li>
+                <li>Home Loans</li>
+                <li>Motor Vehicle Loans</li>
+                <li>Best Interest Rates & Terms</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Benefits -->
+        <div class="benefits-section">
+          <h3>Why Choose <span class="highlight">Investimes</span></h3>
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <div class="benefit-icon">🎯</div>
+              <h4>Goal-Oriented Planning</h4>
+              <p>Customized investment strategies aligned with your life goals</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">🛡️</div>
+              <h4>Risk Management</h4>
+              <p>Balanced portfolios designed to optimize returns while managing risk</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">📈</div>
+              <h4>Growth Focused</h4>
+              <p>Strategic investments aimed at maximizing long-term wealth creation</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">🏦</div>
+              <h4>Wealth Preservation</h4>
+              <p>Smart allocation strategies to protect and grow your assets</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gradient-to-br from-primary via-navy-light to-primary relative overflow-hidden">
+      <!-- Animated background pattern -->
+      <div class="absolute inset-0 opacity-5">
+        <div class="absolute inset-0"
+          style="background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px);">
+        </div>
+      </div>
+
+      <div class="container px-4 mx-auto relative z-10">
+        <!-- Header Section -->
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <h2 class="text-4xl md:text-5xl font-bold text-primary-foreground">
+            Track Your <span class="text-secondary">Growth</span>
+          </h2>
+          <p class="text-lg text-primary-foreground/80">
+            Real-time performance insights and portfolio analytics
           </p>
+        </div>
 
-          <div class="hero-buttons">
-            <button class="btn btn-large btn-secondary" onclick="smoothScroll('contact')">
-              Start Your Investment Journey →
-            </button>
-            <button class="btn btn-large btn-outline" onclick="smoothScroll('services')">
-              Explore Services
-            </button>
+        <!-- Metrics Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <!-- Metric Card 1 -->
+          <div
+            class="p-6 bg-background/10 backdrop-blur-md border-secondary/20 hover:border-secondary/40 transition-all hover:scale-105 shadow-glow animate-fade-in">
+            <div class="flex items-start justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center">
+                <svg><!-- TrendingUp Icon --></svg>
+              </div>
+              <span class="text-xs font-semibold px-2 py-1 rounded-full bg-secondary/20 text-secondary">
+                +2.3%
+              </span>
+            </div>
+            <div class="text-3xl font-bold text-primary-foreground mb-1">
+              12.5%
+            </div>
+            <div class="text-sm text-primary-foreground/70">
+              Average Annual Return
+            </div>
           </div>
 
-          <!-- Stats -->
-          <div class="stats-grid">
-            <div class="stat-card">
-              <div class="stat-value">10+</div>
-              <div class="stat-label">Years Experience</div>
+          <!-- Metric Card 2 -->
+          <div
+            class="p-6 bg-background/10 backdrop-blur-md border-secondary/20 hover:border-secondary/40 transition-all hover:scale-105 shadow-glow animate-fade-in">
+            <div class="flex items-start justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center">
+                <svg><!-- DollarSign Icon --></svg>
+              </div>
+              <span class="text-xs font-semibold px-2 py-1 rounded-full bg-secondary/20 text-secondary">
+                +18%
+              </span>
             </div>
-            <div class="stat-card">
-              <div class="stat-value">500+</div>
-              <div class="stat-label">Happy Investors</div>
+            <div class="text-3xl font-bold text-primary-foreground mb-1">
+              ₹50 Cr+
             </div>
-            <div class="stat-card">
-              <div class="stat-value">₹50Cr+</div>
-              <div class="stat-label">Portfolios Managed</div>
+            <div class="text-sm text-primary-foreground/70">
+              Total AUM
+            </div>
+          </div>
+
+          <!-- Metric Card 3 -->
+          <div
+            class="p-6 bg-background/10 backdrop-blur-md border-secondary/20 hover:border-secondary/40 transition-all hover:scale-105 shadow-glow animate-fade-in">
+            <div class="flex items-start justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center">
+                <svg><!-- PieChart Icon --></svg>
+              </div>
+              <span class="text-xs font-semibold px-2 py-1 rounded-full bg-secondary/20 text-secondary">
+                Optimized
+              </span>
+            </div>
+            <div class="text-3xl font-bold text-primary-foreground mb-1">
+              15+ Funds
+            </div>
+            <div class="text-sm text-primary-foreground/70">
+              Portfolio Diversification
+            </div>
+          </div>
+
+          <!-- Metric Card 4 -->
+          <div
+            class="p-6 bg-background/10 backdrop-blur-md border-secondary/20 hover:border-secondary/40 transition-all hover:scale-105 shadow-glow animate-fade-in">
+            <div class="flex items-start justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center">
+                <svg><!-- Target Icon --></svg>
+              </div>
+              <span class="text-xs font-semibold px-2 py-1 rounded-full bg-secondary/20 text-secondary">
+                Success Rate
+              </span>
+            </div>
+            <div class="text-3xl font-bold text-primary-foreground mb-1">
+              95%
+            </div>
+            <div class="text-sm text-primary-foreground/70">
+              Goals Achieved
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="scroll-indicator">
-          <div class="scroll-dot"></div>
-        </div>
-      </section>
-
-      <!-- SIP Investment Infographic Section -->
-      <section class="infographic-section">
-        <div class="container">
-          <div class="infographic-container">
-            <img src="public/images/corpus-infographic.jpg" alt="SIP Investment Growth - ₹1.0 Crore Accumulated Savings" class="infographic-image" />
-          </div>
-        </div>
-      </section>
-
-      <!-- Services Section -->
-      <section id="services" class="services">
-        <div class="container">
-          <div class="section-header">
-            <h2>Our <span class="highlight">Services</span></h2>
-            <p>Comprehensive financial solutions designed to help you achieve your investment goals</p>
-          </div>
-
-          <div class="services-grid">
-            <!-- Mutual Funds -->
-            <div class="service-card">
-              <div class="service-image">
-                <img src="assets/mutual-funds-icon.jpg" alt="Mutual Funds" />
-              </div>
-              <div class="service-content">
-                <h3>Mutual Funds</h3>
-                <p>Diversify your portfolio with expertly selected mutual funds tailored to your financial goals and risk appetite.</p>
-                <ul class="service-features">
-                  <li>Equity & Debt Funds</li>
-                  <li>SIP Planning</li>
-                  <li>Goal-based Investing</li>
-                  <li>Regular Portfolio Reviews</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Fixed Deposits -->
-            <div class="service-card">
-              <div class="service-image">
-                <img src="assets/fixed-deposits-icon.jpg" alt="Fixed Deposits" />
-              </div>
-              <div class="service-content">
-                <h3>Fixed Deposits</h3>
-                <p>Secure your wealth with guaranteed returns through carefully selected fixed deposit schemes from leading banks.</p>
-                <ul class="service-features">
-                  <li>Competitive Interest Rates</li>
-                  <li>Flexible Tenure Options</li>
-                  <li>Safe & Guaranteed Returns</li>
-                  <li>Tax-Saving FD Options</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Health Insurance -->
-            <div class="service-card">
-              <div class="service-image">
-                <img src="public/images/health-insurance-icon.jpg" alt="Health Insurance" />
-              </div>
-              <div class="service-content">
-                <h3>Health Insurance</h3>
-                <p>Comprehensive health insurance solutions to protect you and your family from medical emergencies and rising healthcare costs.</p>
-                <ul class="service-features">
-                  <li>Individual Health Insurance</li>
-                  <li>Group Health Insurance</li>
-                  <li>Family Floater Plans</li>
-                  <li>Comprehensive Coverage Options</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Term Insurance -->
-            <div class="service-card">
-              <div class="service-image">
-                <img src="public/images/term-insurance-icon.jpg" alt="Term Insurance" />
-              </div>
-              <div class="service-content">
-                <h3>Term Insurance</h3>
-                <p>Affordable life insurance protection to secure your family's financial future with high coverage at low premiums.</p>
-                <ul class="service-features">
-                  <li>High Coverage at Low Premiums</li>
-                  <li>Flexible Policy Terms</li>
-                  <li>Rider Options Available</li>
-                  <li>Tax Benefits Under Section 80C</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Financial Goal Planning -->
-            <div class="service-card">
-              <div class="service-image">
-                <img src="public/images/goal-planning-icon.jpg" alt="Financial Goal Planning" />
-              </div>
-              <div class="service-content">
-                <h3>Financial Goal Planning</h3>
-                <p>Structured financial planning to achieve your life goals with customized investment strategies and regular monitoring.</p>
-                <ul class="service-features">
-                  <li>Child Education Planning</li>
-                  <li>Retirement Planning</li>
-                  <li>Health & Medical Planning</li>
-                  <li>Goal-based Investment Strategies</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Portfolio Management -->
-            <div class="service-card">
-              <div class="service-image">
-                <img src="public/images/portfolio-management-icon.jpg" alt="Portfolio Management" />
-              </div>
-              <div class="service-content">
-                <h3>Portfolio Management</h3>
-                <p>Professional portfolio rebalancing and review services to optimize your investments and maximize returns.</p>
-                <ul class="service-features">
-                  <li>Portfolio Rebalancing</li>
-                  <li>Regular Portfolio Reviews</li>
-                  <li>Performance Analysis</li>
-                  <li>Risk-adjusted Optimization</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Claim Support & Policy Review -->
-            <div class="service-card">
-              <div class="service-image">
-                <img src="public/images/claim-support-icon.jpg" alt="Claim Support & Policy Review" />
-              </div>
-              <div class="service-content">
-                <h3>Claim Support & Policy Review</h3>
-                <p>Expert assistance with insurance claims and comprehensive policy reviews to ensure optimal coverage and benefits.</p>
-                <ul class="service-features">
-                  <li>Insurance Claim Support</li>
-                  <li>Policy Review & Analysis</li>
-                  <li>Documentation Assistance</li>
-                  <li>Coverage Optimization</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Loans -->
-            <div class="service-card">
-              <div class="service-image">
-                <img src="public/images/loan-services-icon.jpg" alt="Loans" />
-              </div>
-              <div class="service-content">
-                <h3>Loans</h3>
-                <p>Access to competitive loan products with expert guidance to help you secure the best rates and terms.</p>
-                <ul class="service-features">
-                  <li>Personal Loans</li>
-                  <li>Home Loans</li>
-                  <li>Motor Vehicle Loans</li>
-                  <li>Best Interest Rates & Terms</li>
-                </ul>
-              </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="assets/certification-icon.jpg" alt="AMFI Certification" />
+            <div class="certification-badge">
+              <div class="badge-text">AMFI</div>
+              <div class="badge-subtext">Certified</div>
             </div>
           </div>
 
-          <!-- Benefits -->
-          <div class="benefits-section">
-            <h3>Why Choose <span class="highlight">Investimes</span></h3>
-            <div class="benefits-grid">
-              <div class="benefit-card">
-                <div class="benefit-icon">🎯</div>
-                <h4>Goal-Oriented Planning</h4>
-                <p>Customized investment strategies aligned with your life goals</p>
+          <div class="about-content">
+            <h2>About <span class="highlight">Your Advisor</span></h2>
+            <p class="about-intro">
+              With over a decade of experience in financial advisory services, we help individuals
+              and families make informed investment decisions for a secure financial future.
+            </p>
+
+            <div class="credentials">
+              <div class="credential-card">
+                <div class="credential-icon">👤</div>
+                <div>
+                  <h4>Kolla Manoj</h4>
+                  <p>AMFI Certified Financial Advisor</p>
+                </div>
               </div>
-              <div class="benefit-card">
-                <div class="benefit-icon">🛡️</div>
-                <h4>Risk Management</h4>
-                <p>Balanced portfolios designed to optimize returns while managing risk</p>
+              <div class="credential-card">
+                <div class="credential-icon">🏆</div>
+                <div>
+                  <h4>ARN-342145</h4>
+                  <p>Registered Mutual Fund Distributor</p>
+                </div>
               </div>
-              <div class="benefit-card">
-                <div class="benefit-icon">📈</div>
-                <h4>Growth Focused</h4>
-                <p>Strategic investments aimed at maximizing long-term wealth creation</p>
-              </div>
-              <div class="benefit-card">
-                <div class="benefit-icon">🏦</div>
-                <h4>Wealth Preservation</h4>
-                <p>Smart allocation strategies to protect and grow your assets</p>
+              <div class="credential-card">
+                <div class="credential-icon">💼</div>
+                <div>
+                  <h4>Personalized Service</h4>
+                  <p>Dedicated support for all your investment needs</p>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="py-20 bg-gradient-to-br from-primary via-navy-light to-primary relative overflow-hidden">
-        <!-- Animated background pattern -->
-        <div class="absolute inset-0 opacity-5">
-          <div class="absolute inset-0" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px);"></div>
-        </div>
-
-        <div class="container px-4 mx-auto relative z-10">
-          <!-- Header Section -->
-          <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <h2 class="text-4xl md:text-5xl font-bold text-primary-foreground">
-              Track Your <span class="text-secondary">Growth</span>
-            </h2>
-            <p class="text-lg text-primary-foreground/80">
-              Real-time performance insights and portfolio analytics
+            <p class="about-mission">
+              Our mission is to empower investors with expert guidance, transparent advice, and
+              personalized financial solutions that align with their goals and risk profile.
             </p>
           </div>
-
-          <!-- Metrics Grid -->
-          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <!-- Metric Card 1 -->
-            <div class="p-6 bg-background/10 backdrop-blur-md border-secondary/20 hover:border-secondary/40 transition-all hover:scale-105 shadow-glow animate-fade-in">
-              <div class="flex items-start justify-between mb-4">
-                <div class="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center">
-                  <svg><!-- TrendingUp Icon --></svg>
-                </div>
-                <span class="text-xs font-semibold px-2 py-1 rounded-full bg-secondary/20 text-secondary">
-                  +2.3%
-                </span>
-              </div>
-              <div class="text-3xl font-bold text-primary-foreground mb-1">
-                12.5%
-              </div>
-              <div class="text-sm text-primary-foreground/70">
-                Average Annual Return
-              </div>
-            </div>
-
-            <!-- Metric Card 2 -->
-            <div class="p-6 bg-background/10 backdrop-blur-md border-secondary/20 hover:border-secondary/40 transition-all hover:scale-105 shadow-glow animate-fade-in">
-              <div class="flex items-start justify-between mb-4">
-                <div class="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center">
-                  <svg><!-- DollarSign Icon --></svg>
-                </div>
-                <span class="text-xs font-semibold px-2 py-1 rounded-full bg-secondary/20 text-secondary">
-                  +18%
-                </span>
-              </div>
-              <div class="text-3xl font-bold text-primary-foreground mb-1">
-                ₹50 Cr+
-              </div>
-              <div class="text-sm text-primary-foreground/70">
-                Total AUM
-              </div>
-            </div>
-
-            <!-- Metric Card 3 -->
-            <div class="p-6 bg-background/10 backdrop-blur-md border-secondary/20 hover:border-secondary/40 transition-all hover:scale-105 shadow-glow animate-fade-in">
-              <div class="flex items-start justify-between mb-4">
-                <div class="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center">
-                  <svg><!-- PieChart Icon --></svg>
-                </div>
-                <span class="text-xs font-semibold px-2 py-1 rounded-full bg-secondary/20 text-secondary">
-                  Optimized
-                </span>
-              </div>
-              <div class="text-3xl font-bold text-primary-foreground mb-1">
-                15+ Funds
-              </div>
-              <div class="text-sm text-primary-foreground/70">
-                Portfolio Diversification
-              </div>
-            </div>
-
-            <!-- Metric Card 4 -->
-            <div class="p-6 bg-background/10 backdrop-blur-md border-secondary/20 hover:border-secondary/40 transition-all hover:scale-105 shadow-glow animate-fade-in">
-              <div class="flex items-start justify-between mb-4">
-                <div class="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center">
-                  <svg><!-- Target Icon --></svg>
-                </div>
-                <span class="text-xs font-semibold px-2 py-1 rounded-full bg-secondary/20 text-secondary">
-                  Success Rate
-                </span>
-              </div>
-              <div class="text-3xl font-bold text-primary-foreground mb-1">
-                95%
-              </div>
-              <div class="text-sm text-primary-foreground/70">
-                Goals Achieved
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section id="about" class="about">
-        <div class="container">
-          <div class="about-grid">
-            <div class="about-image">
-              <img src="assets/certification-icon.jpg" alt="AMFI Certification" />
-              <div class="certification-badge">
-                <div class="badge-text">AMFI</div>
-                <div class="badge-subtext">Certified</div>
-              </div>
-            </div>
-
-            <div class="about-content">
-              <h2>About <span class="highlight">Your Advisor</span></h2>
-              <p class="about-intro">
-                With over a decade of experience in financial advisory services, we help individuals
-                and families make informed investment decisions for a secure financial future.
-              </p>
-
-              <div class="credentials">
-                <div class="credential-card">
-                  <div class="credential-icon">👤</div>
-                  <div>
-                    <h4>Kolla Manoj</h4>
-                    <p>AMFI Certified Financial Advisor</p>
-                  </div>
-                </div>
-                <div class="credential-card">
-                  <div class="credential-icon">🏆</div>
-                  <div>
-                    <h4>ARN-342145</h4>
-                    <p>Registered Mutual Fund Distributor</p>
-                  </div>
-                </div>
-                <div class="credential-card">
-                  <div class="credential-icon">💼</div>
-                  <div>
-                    <h4>Personalized Service</h4>
-                    <p>Dedicated support for all your investment needs</p>
-                  </div>
-                </div>
-              </div>
-
-              <p class="about-mission">
-                Our mission is to empower investors with expert guidance, transparent advice, and
-                personalized financial solutions that align with their goals and risk profile.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="contact" class="contact">
-        <div class="container">
-          <div class="section-header">
-            <h2>Get In <span class="highlight">Touch</span></h2>
-            <p>Ready to start your investment journey? Contact us today for a free consultation.</p>
-          </div>
-
-          <div class="contact-grid">
-            <!-- Contact Form -->
-            <div class="contact-form-card">
-              <h3>Send us a message</h3>
-              <form id="contactForm" onsubmit="handleSubmit(event)">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" required placeholder="Your full name" />
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required placeholder="your@email.com" />
-                </div>
-                <div class="form-group">
-                  <label for="phone">Phone</label>
-                  <input type="tel" id="phone" name="phone" required placeholder="+91 1234567890" />
-                </div>
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" required placeholder="Tell us about your investment goals..." rows="4"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-large">Send Message</button>
-              </form>
-            </div>
-
-            <!-- Contact Info -->
-            <div class="contact-info-section">
-              <div class="contact-info-card">
-                <h3>Contact Information</h3>
-                <div class="contact-details">
-                  <div class="contact-item">
-                    <span class="contact-icon">📞</span>
-                    <div>
-                      <div class="contact-label">Phone</div>
-                      <a href="tel:+917013970340" class="contact-value">+91 7013970340</a>
-                    </div>
-                  </div>
-                  <div class="contact-item">
-                    <span class="contact-icon">✉️</span>
-                    <div>
-                      <div class="contact-label">Email</div>
-                      <a href="mailto:office@investimes.in" class="contact-value">office@investimes.in</a>
-                    </div>
-                  </div>
-                  <div class="contact-item">
-                    <span class="contact-icon">📍</span>
-                    <div>
-                      <div class="contact-label">Location</div>
-                      <div class="contact-value">Hyderabad, India</div>
-                    </div>
-                  </div>
-                  <div class="contact-item">
-                    <span class="contact-icon">⏰</span>
-                    <div>
-                      <div class="contact-label">Working Hours</div>
-                      <div class="contact-value">Mon - Sat: 9:00 AM - 6:00 PM</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="cta-card">
-                <h4>Ready to Invest?</h4>
-                <p>Schedule a free consultation with our financial advisor today.</p>
-                <a href="tel:+917013970340" class="btn btn-secondary btn-large">Call Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <h3 class="footer-logo">INVESTIMES</h3>
-            <p>Your trusted partner for wealth creation through mutual funds and fixed deposits.</p>
-            <p class="footer-arn">AMFI Registered: ARN-342145</p>
-          </div>
-
-          <div class="footer-links">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#services" onclick="smoothScroll('services')">Services</a></li>
-              <li><a href="#about" onclick="smoothScroll('about')">About</a></li>
-              <li><a href="#contact" onclick="smoothScroll('contact')">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-contact">
-            <h4>Contact Us</h4>
-            <ul>
-              <li>
-                <span class="footer-icon">📞</span>
-                <a href="tel:+917013970340">+91 7013970340</a>
-              </li>
-              <li>
-                <span class="footer-icon">✉️</span>
-                <a href="mailto:office@investimes.in">office@investimes.in</a>
-              </li>
-              <li>
-                <span class="footer-icon">📍</span>
-                <span>Hyderabad, India</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <p>© <span id="year"></span> Investimes. All rights reserved. | Kolla Manoj - AMFI Certified Financial Advisor</p>
-          <p class="disclaimer">Mutual fund investments are subject to market risks. Please read all scheme related documents carefully before investing.</p>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="antigravity.js"></script>
-    <script>
-      // Set current year
-      document.getElementById('year').textContent = new Date().getFullYear();
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get In <span class="highlight">Touch</span></h2>
+          <p>Ready to start your investment journey? Contact us today for a free consultation.</p>
+        </div>
 
-      // Smooth scroll function
-      function smoothScroll(id) {
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
+        <div class="contact-grid">
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <h3>Send us a message</h3>
+            <form id="contactForm" onsubmit="handleSubmit(event)">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your full name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+91 1234567890" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Tell us about your investment goals..."
+                  rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info-section">
+            <div class="contact-info-card">
+              <h3>Contact Information</h3>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <span class="contact-icon">📞</span>
+                  <div>
+                    <div class="contact-label">Phone</div>
+                    <a href="tel:+917013970340" class="contact-value">+91 7013970340</a>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-icon">✉️</span>
+                  <div>
+                    <div class="contact-label">Email</div>
+                    <a href="mailto:office@investimes.in" class="contact-value">office@investimes.in</a>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-icon">📍</span>
+                  <div>
+                    <div class="contact-label">Location</div>
+                    <div class="contact-value">Hyderabad, India</div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-icon">⏰</span>
+                  <div>
+                    <div class="contact-label">Working Hours</div>
+                    <div class="contact-value">Mon - Sat: 9:00 AM - 6:00 PM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cta-card">
+              <h4>Ready to Invest?</h4>
+              <p>Schedule a free consultation with our financial advisor today.</p>
+              <a href="tel:+917013970340" class="btn btn-secondary btn-large">Call Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="footer-logo">INVESTIMES</h3>
+          <p>Your trusted partner for wealth creation through mutual funds and fixed deposits.</p>
+          <p class="footer-arn">AMFI Registered: ARN-342145</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#services" onclick="smoothScroll('services')">Services</a></li>
+            <li><a href="#about" onclick="smoothScroll('about')">About</a></li>
+            <li><a href="#contact" onclick="smoothScroll('contact')">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>
+              <span class="footer-icon">📞</span>
+              <a href="tel:+917013970340">+91 7013970340</a>
+            </li>
+            <li>
+              <span class="footer-icon">✉️</span>
+              <a href="mailto:office@investimes.in">office@investimes.in</a>
+            </li>
+            <li>
+              <span class="footer-icon">📍</span>
+              <span>Hyderabad, India</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Investimes. All rights reserved. | Kolla Manoj - AMFI Certified Financial Advisor
+        </p>
+        <p class="disclaimer">Mutual fund investments are subject to market risks. Please read all scheme related
+          documents carefully before investing.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="antigravity.js"></script>
+  <script>
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll function
+    function smoothScroll(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('active');
+    }
+
+    // Navigation scroll effect
+    let lastScrollY = 0;
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navigation');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Form submission
+    function handleSubmit(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const message = document.getElementById('message').value;
+
+      // Create mailto link with form data
+      const subject = encodeURIComponent('Investment Inquiry from ' + name);
+      const body = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Email: ' + email + '\n' +
+        'Phone: ' + phone + '\n\n' +
+        'Message:\n' + message
+      );
+
+      window.location.href = 'mailto:office@investimes.in?subject=' + subject + '&body=' + body;
+
+      // Show success message
+      alert('Thank you for your interest! Your default email client will open to send your message.');
+
+      // Reset form
+      document.getElementById('contactForm').reset();
+    }
+
+    // Close mobile menu on outside click
+    document.addEventListener('click', (e) => {
+      const menu = document.getElementById('mobile-menu');
+      const menuBtn = document.querySelector('.mobile-menu-btn');
+
+      if (menu.classList.contains('active') &&
+        !menu.contains(e.target) &&
+        !menuBtn.contains(e.target)) {
+        menu.classList.remove('active');
+      }
+    });
+
+    // Text Swapper
+    var TextSwapper = function (el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 1000;
+      this.tick();
+    };
+
+    TextSwapper.prototype.tick = function () {
+      var i = this.loopNum % this.toRotate.length;
+      var text = this.toRotate[i];
+
+      // Swap text
+      this.el.innerHTML = '<span class="wrap">' + text + '</span>';
+
+      // Add changing class for animation
+      this.el.classList.add('changing');
+
+      var that = this;
+
+      // Remove class after animation plays
+      setTimeout(function () {
+        that.el.classList.remove('changing');
+      }, this.period / 2);
+
+      this.loopNum++;
+
+      setTimeout(function () {
+        that.tick();
+      }, this.period);
+    };
+
+    window.onload = function () {
+      var elements = document.getElementsByClassName('txt-rotate');
+      for (var i = 0; i < elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-rotate');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TextSwapper(elements[i], JSON.parse(toRotate), period);
         }
       }
+    };
+  </script>
+</body>
 
-      function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-
-      // Mobile menu toggle
-      function toggleMobileMenu() {
-        const menu = document.getElementById('mobile-menu');
-        menu.classList.toggle('active');
-      }
-
-      // Navigation scroll effect
-      let lastScrollY = 0;
-      window.addEventListener('scroll', () => {
-        const nav = document.getElementById('navigation');
-        if (window.scrollY > 50) {
-          nav.classList.add('scrolled');
-        } else {
-          nav.classList.remove('scrolled');
-        }
-      });
-
-      // Form submission
-      function handleSubmit(event) {
-        event.preventDefault();
-        
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const phone = document.getElementById('phone').value;
-        const message = document.getElementById('message').value;
-        
-        // Create mailto link with form data
-        const subject = encodeURIComponent('Investment Inquiry from ' + name);
-        const body = encodeURIComponent(
-          'Name: ' + name + '\n' +
-          'Email: ' + email + '\n' +
-          'Phone: ' + phone + '\n\n' +
-          'Message:\n' + message
-        );
-        
-        window.location.href = 'mailto:office@investimes.in?subject=' + subject + '&body=' + body;
-        
-        // Show success message
-        alert('Thank you for your interest! Your default email client will open to send your message.');
-        
-        // Reset form
-        document.getElementById('contactForm').reset();
-      }
-
-      // Close mobile menu on outside click
-      document.addEventListener('click', (e) => {
-        const menu = document.getElementById('mobile-menu');
-        const menuBtn = document.querySelector('.mobile-menu-btn');
-        
-        if (menu.classList.contains('active') && 
-            !menu.contains(e.target) && 
-            !menuBtn.contains(e.target)) {
-          menu.classList.remove('active');
-        }
-      });
-    </script>
-  </body>
 </html>
