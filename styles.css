@@ -77,7 +77,12 @@ ul {
 }
 
 .highlight {
-  color: var(--emerald);
+  background: linear-gradient(120deg, var(--emerald) 0%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  font-weight: 800;
 }
 
 .section-header {
